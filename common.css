@@ -25,39 +25,66 @@ p {
 .fade-enter,
 .fade-leave,
 .fade-appear {
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .fade-enter {
   opacity: 0;
-  animation-duration: .5s;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
-  animation-play-state: paused;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .fade-appear {
   opacity: 0;
-  animation-duration: .5s;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
-  animation-play-state: paused;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .fade-leave {
-  animation-duration: .5s;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
-  animation-play-state: paused;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .fade-enter.fade-enter-active {
-  animation-name: fadeIn;
-  animation-play-state: running;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .fade-appear.fade-appear-active {
-  animation-name: fadeIn;
-  animation-play-state: running;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .fade-leave.fade-leave-active {
-  animation-name: fadeOut;
-  animation-play-state: running;
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -65,6 +92,14 @@ p {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes fadeOut {
@@ -102,7 +137,7 @@ p {
   line-height: 58px;
   text-align: center;
   cursor: pointer;
-  transition: background .45s;
+  transition: background 0.45s;
 }
 .nav .nav-bar {
   width: 100px;
@@ -111,7 +146,7 @@ p {
   left: 0;
   height: 2px;
   background: #fff;
-  transition: left .3s;
+  transition: left 0.3s;
 }
 .page0 {
   margin: 0 auto;
@@ -188,5 +223,6 @@ p {
 .navbar {
   display: none !important;
 }
+
 
 /*# sourceMappingURL=common.css.map*/
